@@ -206,7 +206,7 @@ for alert in stub.StreamStockAlerts(inventory_pb2.AlertRequest(threshold=10)):
     print(f"[ALERT] Низкий запас: {alert.product_name} (ID: {alert.product_id}), Осталось: {alert.current_quantity}")
 ```
 
-**Ожидаемый ответ (на основе текущего** `storage.json`**):**
+**Ожидаемый ответ:**
 
 ```
 [ALERT] Низкий запас: Планшет (ID: p3), Осталось: 2
